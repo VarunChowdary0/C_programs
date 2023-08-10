@@ -1,0 +1,4 @@
+varun	19	100000
+huzefa	19	70000
+chakram	19	78000
+trived	19	86000
