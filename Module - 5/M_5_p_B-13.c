@@ -18,3 +18,24 @@ test line 2
 test line 3
 test line 4
 */
+
+#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char str[100],ch;
+    int n,i;
+    FILE *fp;
+    fp = fopen("MultiLine.txt","w");
+    printf("Enter number of lines: ");
+    scanf("%d",&n);
+    fflush(stdin);
+    for(i=0;i<n;i++)
+    {
+        gets(str);
+        fprintf(fp,"%s\n",str);
+    }
+    printf("\nSaved.");
+    fclose(fp);
+}

@@ -1,19 +1,10 @@
 /*
 Write a program in C to
-read an existing file.
-Example :
-Input the file name to be
-opened :
-test.txt
-Expected Output :
-The content of the file
-test.txt is :
-This is the content of the
-file test.txt.
+count a number of words
+and characters in a file.
 */
-#include<stdio.h>
 #include<string.h>
-
+#include<stdio.h>
 int main(void)
 {
     char fileName[30];
@@ -21,6 +12,7 @@ int main(void)
     printf("Enter file name: ");
     scanf("%s",fileName);
     FILE *fp;
+    int nl=0;
     fp=fopen(fileName,"r");
     if(fp==NULL)
     {
@@ -31,8 +23,9 @@ int main(void)
         printf("Contents of File:\n");
         while((ch=(fgetc(fp)))!=EOF)
         {
-            printf("%c",ch);
+           nl++;
         }
     }
+    printf("characters: %d",nl);
     fclose(fp);
 }
