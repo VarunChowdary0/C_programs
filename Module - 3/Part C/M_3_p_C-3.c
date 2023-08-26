@@ -1,22 +1,11 @@
 /*
-Write C program to read a
-list of elements into an
-array and print the reverse
-of the list.
+Find the output of the
+following code.
 */
-#include<stdio.h>
 
+#include<stdio.h>
 int main(void)
 {
-    int arr[50],n,i;
-    printf("Enter N: ");
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        scanf("%d",&arr[i]);
-    }
-    for(i=i-1;i>=0;i--)
-    {
-        printf("%-5d",arr[i]);
-    }
+    int arr[3][2]={10,20,30,40,50,60};
+    printf("%d",arr[0][4]); //  50
 }
