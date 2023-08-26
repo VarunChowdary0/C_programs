@@ -34,12 +34,12 @@ start:  printf("Enter Order of matrix A: ");
         }
 
         //---------
-        for(i=0;i<n;i++)
+        for(i=0;i<m;i++)
         {
-            for(j=0;j<p;j++)
+            for(j=0;j<q;j++)
             {
                 C[i][j]=0;
-                for(k=0;k<p;k++)
+                for(k=0;k<n;k++)
                 {
                     C[i][j] = C[i][j] + (A[i][k] * B[k][j]); 
                 }
@@ -49,7 +49,7 @@ start:  printf("Enter Order of matrix A: ");
         //---
 
         printf("\n");
-        for(i=0;i<p;i++)
+        for(i=0;i<m;i++)
         {
             for(j=0;j<q;j++)
             {
