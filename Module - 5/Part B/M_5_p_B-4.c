@@ -20,12 +20,12 @@ d. fwrite()
                 fclose(filePointer)
     c. )fread():
                 This standard library function is used to
-                read data from a file.
+                read binary data from a file.
             <syntax>
                 fread(pointer_where_to_store , sizeof(type) ,no_of_values_to_read , filePointer )
     d. )fwrite():
                 This standard library function is used to
-                write data into the file.Data is stored in binary .
+                write data into the file as binary.Data is stored in binary .
             <syntax>
                 fwrite(pointer_of_data_array , sizeof(type) , no_of_values_to_write , filePointer )
 

@@ -1,6 +1,14 @@
 /*
-Write C program to read
-two matrices and find the
-addition and multiplication
-of two matrices.
+Find the output of the
+following code.
 */
+#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char str1[]="hellow";
+    char str2[]="helow";
+    int x;
+    x=strcmp(str1,str2);
+    printf("%d",x);  // -1
+}

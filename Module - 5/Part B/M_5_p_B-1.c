@@ -6,7 +6,6 @@ skipping n characters from beginning of the file.~
 */
 
 #include<stdio.h>
-
 int main(void)
 {
     FILE *fp;

@@ -12,7 +12,7 @@ int main(void)
     printf("Enter file name: ");
     scanf("%s",fileName);
     FILE *fp;
-    int nl=0;
+    int nl=0,wrd=0;
     fp=fopen(fileName,"r");
     if(fp==NULL)
     {
@@ -20,12 +20,16 @@ int main(void)
     }
     else
     {
-        printf("Contents of File:\n");
         while((ch=(fgetc(fp)))!=EOF)
         {
            nl++;
+           if(ch==' ')
+           {
+                wrd++;
+           }
         }
     }
-    printf("characters: %d",nl);
+    printf("characters: %d\n",nl);
+    printf("Words: %d",wrd+1);
     fclose(fp);
 }

@@ -22,7 +22,7 @@ int main(void)
     }
     else
     {
-        printf("Enter line: ");
+        printf("Enter line to be removed: ");
         scanf("%d",&x);
         while ((ch = fgetc(fp)) != EOF)
         {

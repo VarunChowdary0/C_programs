@@ -6,9 +6,9 @@ following code.
 #include<string.h>
 int main(void)
 {
-    char str1[]="hellow";
-    char str2[]="helow";
-    int x;
-    x=strcmp(str1,str2);
-    printf("%d",x);  // -1
+    char str1[]="NEW DELHI";
+    char str2[]="BANGALORE";
+   // strcpy(str1,str2,4); // error takes only two parameters.
+    strcpy(str1,str2);
+    printf("%s",str1);  // BANGALORE
 }
